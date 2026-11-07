@@ -3,35 +3,157 @@ layout: default
 title: Tali Lerner | Academic Profile
 ---
 
-# Tali Lerner
+<style>
+  /* Base & Hero */
+  .profile-header {
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  }
+  .profile-header h1 {
+    margin: 0 0 10px 0;
+    color: #ffffff;
+    font-size: 2.2rem;
+    border-bottom: none;
+  }
+  .profile-subtitle {
+    font-size: 1.15rem;
+    opacity: 0.95;
+    margin: 0;
+    font-weight: 300;
+  }
 
-Welcome to my personal academic page! I am an M.Sc. student in Life Sciences within the Computational and Systems Biology track at the Weizmann Institute of Science.
+  /* Cards Grid */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 25px 0;
+  }
+  .info-card {
+    background: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .info-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  }
+  .info-card h3 {
+    margin-top: 0;
+    color: #1a5235;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* Badges / Tags */
+  .badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+  }
+  .badge {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid #c8e6c9;
+  }
+
+  /* Buttons */
+  .btn-action {
+    display: inline-block;
+    background: #1b5e20;
+    color: #ffffff !important;
+    padding: 8px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-right: 10px;
+    transition: background 0.2s ease;
+  }
+  .btn-action:hover {
+    background: #2e7d32;
+    text-decoration: none;
+  }
+  .btn-outline {
+    display: inline-block;
+    background: transparent;
+    color: #1b5e20 !important;
+    border: 1px solid #1b5e20;
+    padding: 8px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+  .btn-outline:hover {
+    background: #e8f5e9;
+    text-decoration: none;
+  }
+</style>
+
+<div class="profile-header">
+  <h1>Tali Lerner</h1>
+  <p class="profile-subtitle">M.Sc. Student in Life Sciences | Computational & Systems Biology Track<br>Weizmann Institute of Science</p>
+</div>
+
+<div class="cards-grid">
+  <div class="info-card">
+    <h3>🎓 Background</h3>
+    <p><strong>B.Sc. in Biomedical Engineering</strong><br>
+    Technion – Israel Institute of Technology<br>
+    <em>Specialization: Computational Biophysics & Tissue Engineering</em></p>
+  </div>
+
+  <div class="info-card">
+    <h3>🔬 Current Research</h3>
+    <p>Lab rotation in <strong>Prof. Asaf Aharoni's Laboratory</strong>.<br>
+    Investigating plant-microbiome interactions, duckweed (<em>Spirodela polyrhiza</em>) dynamics, and high-throughput data pipelines.</p>
+  </div>
+</div>
 
 ---
 
-## Academic Background & Research
+## 🎯 Python Course Objectives
 
-- **B.Sc. in Biomedical Engineering** from the Technion – Israel Institute of Technology, specializing in Computational Biophysics and Tissue Engineering.
-- **Current Research:** Conducting lab rotation research in Prof. Asaf Aharoni's laboratory (Specialized Metabolism), investigating plant microbiome dynamics, bacterial-plant interactions (specifically *Spirodela polyrhiza* / duckweed), and metabolomic pipelines.
-- **Interests:** Computational biology, high-throughput biological data analysis, metabolomics, and non-animal experimental models.
+In day-to-day wet-lab and computational pipelines, processing tabular datasets (OD kinetics, CFU plates, metabolomics tables) requires precision and automation. 
 
----
+* **Data Automation:** Eliminating manual Excel workflows in favor of robust, reproducible Python pipelines.
+* **Analysis & Visualization:** Implementing clean data wrangling (`pandas`, `numpy`) and reproducible scientific figures.
+* **Code Integrity:** Practicing structured version control with Git, issue tracking, and literate documentation.
 
-## Goals for the Python Course
-
-In my day-to-day research, handling experimental measurements (OD readings, CFU counts, dilution curves) and large datasets (RNA-seq, metabolomics tables) requires reproducible and automated workflows.
-
-My primary goals for this course are:
-1. **Automation:** Streamline repetitive computational tasks and data transformations directly from raw tabular files (Excel, CSV) rather than manual processing.
-2. **Data Analysis & Visualization:** Build scalable Python pipelines using Pandas, NumPy, and plotting libraries for complex biological datasets.
-3. **Reproducibility:** Deepen best practices in version control (Git & GitHub) and literate programming (Jupyter notebooks).
-
----
-
-## Beyond the Lab
-
-When I'm not writing code or running assays, I enjoy digital painting and artwork, hiking, and exploring plant-based, gluten-free culinary creations.
+<div class="badges-container">
+  <span class="badge">Python</span>
+  <span class="badge">R</span>
+  <span class="badge">Computational Biology</span>
+  <span class="badge">Metabolomics</span>
+  <span class="badge">Data Automation</span>
+  <span class="badge">Git / GitHub</span>
+</div>
 
 ---
 
-*Contact: [GitHub Profile](https://github.com/taliweizmann)*
+## 🎨 Beyond the Lab
+
+Outside of academic research, I create digital artwork, enjoy hiking trails, and experiment with healthy plant-based, gluten-free culinary recipes.
+
+<br>
+
+<div>
+  <a href="https://github.com/taliweizmann" class="btn-action">GitHub Profile</a>
+  <a href="https://github.com/taliweizmann/python-course-assignments" class="btn-outline">View Assignments Repo</a>
+</div>
